@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asynchronous JavaScript</title>
+</head>
+<body>
+
+<h2>Asynchronous JavaScript – Promise Example</h2>
+<p>Open console to see output</p>
+
+<script>
+    let promise = new Promise(function(resolve, reject) {
+
+        setTimeout(function() {
+            resolve("Data loaded successfully using Promise");
+        }, 2000);
+
+    });
+
+    promise.then(function(message) {
+        console.log(message);
+    });
+</script>
+
+</body>
+</html>
